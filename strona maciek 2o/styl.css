@@ -1,0 +1,215 @@
+@media only screen and (min-width: 1000px)
+{
+*{
+    font-size: 15px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+#samochod_baner{
+    transition: transform .5s ease-in-out;
+}
+#bmw_baner{
+    transition: transform .5s ease-in-out;
+}
+#bmw2_baner{
+    transition: transform .5s ease-in-out;
+}
+#samochod_baner:hover{
+    border: solid 2px black;
+    transform: scale(90%);
+}
+#bmw_baner:hover{
+    border: solid 2px black;
+    transform: rotate(20deg);
+}
+#bmw2_baner:hover{
+    border: solid 2px black;
+    transform: skew(10deg);
+}
+#samochod_baner, #bmw_baner, #bmw2_baner{
+   width: 310px;
+   height: 200px;
+   margin-left: 50px;
+   margin-right: 50px;
+   z-index: 0;
+
+}
+#nasze_samochody{
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    z-index: 1;
+}
+#margines{
+    width: auto;
+    height: 20px;
+}
+#baner{
+    text-align: center;
+    width: 1500px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gora{
+    width: auto;
+    height: 100px;
+    background: linear-gradient(rgba(2,0,36,1) 0%, rgba(121,9,120,1));
+}
+#socialmedia{
+    background-color: skyblue;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+#social{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;   
+}
+#nawigacja{
+    width: 500px;
+    height: 45%;
+    clear: both;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#nawigacja a{
+    font-size: 25px;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+#produkty{
+    text-align: center;
+    width: 1300px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+table img{
+    width: 300px;
+    cursor: pointer;
+}
+table{
+    background-color: skyblue;
+    left: 34%;
+    float: left;
+}
+table td, th{
+    padding: 10px;
+    border: 2px solid black;
+}
+#prom{
+    text-align: center;
+    width: 500px;
+    height: 494px;
+    float: right;
+}
+#stopka{
+    background: linear-gradient(rgba(121,9,120,1) 0%, rgba(2,0,36,1));
+    clear: both;
+    height: 100px;
+    text-align: center;
+}
+p{
+    font-size: large;
+}
+#calosc{
+    background-color: rgba(121,9,120,1);
+}
+#promocje{
+    width: 500px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    animation-name: promocje;
+    animation-duration: .5s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    margin-bottom: 0px;
+    width: auto;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes promocje{
+    0%{
+        color: red;
+        font-size: smaller;
+    }
+    20%{
+        color: orange;
+        font-size: small;
+    }
+    40%{
+        color: yellow;
+        font-size: medium;
+    }
+    60%{
+        color: green;
+        font-size: larger;
+    }
+    80%{
+        color: blue;
+        font-size: large;
+    }
+    100%{
+        color: indigo;
+    }
+}
+#subaru{
+    animation-name: ansubaru;
+    animation: ansubaru .0001s infinite alternate;
+    width: 90%;
+    height: auto;
+    margin-top: 60px;
+    cursor: pointer;
+}
+
+@keyframes ansubaru{
+    0%{
+        transform: rotate(360deg);
+        transform: scale(700%);
+    }
+    100%{
+        border-radius: 500px;
+        border: 5px solid magenta;
+    }
+}
+#nadbaner{
+    width: auto;
+    height: 300px;
+    text-align: center;
+}
+#Kontakt{
+    font-size: 24px;
+    float: left;
+    margin: 0;
+    width: 45%;
+    height: 300px;
+}
+form{
+    height: 150px;
+    margin: 0;
+    width: 45%;
+    float: right;
+    position: relative;
+    bottom: -75px
+}
+input{
+    color:black;
+
+}
+}
+@media only screen and (min-width: 576px) {
+    #nawigacja{
+        background-color: black;
+    }
+}
