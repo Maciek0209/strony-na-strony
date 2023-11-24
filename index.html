@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta name="author" content="Maciek Ociepa">
+        <meta charset="utf-8">
+        <title>zadanie na ocene</title>
+        <link rel="stylesheet" href="styl.css" type="text/css">
+    </head>
+    <body>
+        <div id="gora">
+            <div id="logo">
+
+            </div>
+            <div id="socialmedia">
+                <a href="https://edu.google.com/intl/pl/workspace-for-education/classroom/" id="social" target="_blank">Mój classroom</a>
+            </div>
+            <div id="nawigacja">
+                <a href="#home">Home</a>
+                <a href="#onas">O nas</a>
+                <a href="#produkty">Produkty</a>
+                <a href="#Kontakt">Kontakt</a>
+            </div>
+        </div>
+        <div id="calosc">
+            <div id="margines"></div>
+            <div id="baner">
+                <p id="nasze_samochody">Nasze samochody</p>
+                <img src="samochod_baner.jpg" alt="samochod baner" id="samochod_baner">
+                <img src="bwm.jpg" alt="bmw" id="bmw_baner">
+                <img src="bmw2.jpg" alt="bmw2" id="bmw2_baner">
+            </div>
+            <div id="onas">
+                <p> O nas <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sollicitudin libero eget risus malesuada tincidunt. Proin condimentum scelerisque massa ut pulvinar. Praesent varius magna nec metus interdum, eu porttitor lacus egestas. Aliquam quis tincidunt ligula. Aliquam sodales laoreet metus et imperdiet. Vestibulum luctus urna at ante mattis, vitae ornare nibh hendrerit. Vivamus in massa consequat, laoreet diam ut, faucibus nisl. Suspendisse vel placerat dolor. In hac habitasse platea dictumst. Nulla facilisi. Vestibulum diam felis, hendrerit vitae nibh a, iaculis dignissim nibh. Etiam in ipsum eu erat fermentum euismod eu quis libero. Proin non aliquam lorem. Integer eget mollis turpis. Morbi blandit dui odio, tempor tempor dui posuere eu.</p><br>
+            </div>
+            <div id="produkty">
+                <table>
+                    <tr>
+                        <th colspan="2"><p>Nasze produkty</p></th>
+                    </tr>              
+                    <tr>
+                        <td><img src="zdj1.jpg" alt="zdjęcie1" onclick="zdj1()" onmouseover="zmiana1()" onmouseout="zmiana2()" id="zdj1"></td>
+                        <td><img src="zdj2.jpg" alt="zdjęcie2" onclick="zdj2()" onmouseover="zmiana3()" onmouseout="zmiana4()" id="zdj2"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="zdj3.jpg" alt="zdjęcie3" onclick="zdj3()" onmouseover="zmiana5()" onmouseout="zmiana6()" id="zdj3"></td>
+                        <td><img src="zdj4.jpg" alt="zdjęcie4" onclick="zdj4()" onmouseover="zmiana7()" onmouseout="zmiana8()" id="zdj4"></td>
+                    </tr>
+                </table>
+                <div id="prom">
+                    <div id="promocje">Nasza najlepsza promocja</div>
+                    <img src="subaru.jpg" alt="subaru" id="subaru" onclick="subaruzdj()">
+                </div>
+            </div>
+            <div id="opis">
+                
+            </div>
+            <div id="nadbaner">
+                <div id="Kontakt">
+                    <p>Skontaktuj się z nami:</p>
+                    <br>
+                    Imię: <b>Maciek</b><br>
+                    Nazwisko: <b>Ociepa</b><br>
+                    Nr. telefonu: <b>690 950 209</b><br>
+                    E-mail: <b>mociepa22@tzn.edu.pl</b><br><br>
+                    <img src="Avatar.png" alt="avatar">
+                </div>
+                <div id="formularz">
+                    <form>
+                        Zapisz się aby otrzymywać powiadomienia<br>
+                        Wpisz swoje imię: <input type="text" id="imie"><br>
+                        Wpisz swój e-mail: <input type="text" id="mail"><br>
+                        Wpisz ile masz lat: <input type="number" id="lat"><br>
+                        <input type="reset" value="reset">
+                        <input type="button" value="wyślij" onclick="wyslij()">
+                        <div id="wynikform"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="stopka">
+            <p><strong><i>Autor strony: Maciek Ociepa</i></strong></p>
+        </div>
+        
+        <script>
+            function zdj1()
+            {
+                document.getElementById("opis").innerHTML="Wybrałeś samochód 1:<br> Suspendisse quis purus sit amet sapien porta tristique. Fusce at rutrum est, a facilisis risus. Maecenas ut arcu congue, efficitur lorem et, eleifend lectus. Donec sapien ex, dapibus at sodales sit amet, efficitur non augue. Nullam lobortis ornare hendrerit. Phasellus viverra, augue vitae condimentum suscipit, lectus neque dapibus est, id vestibulum magna nisi ac ipsum. Suspendisse ultricies faucibus elit sed bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt sollicitudin mattis. Ut congue sapien a blandit consectetur. Nullam nec arcu porta, tincidunt felis non, fermentum ligula.<br>";
+            }
+            function zdj2()
+            {
+                document.getElementById("opis").innerHTML="Wybrałeś samochód 2:<br> Suspendisse quis purus sit amet sapien porta tristique. Fusce at rutrum est, a facilisis risus. Maecenas ut arcu congue, efficitur lorem et, eleifend lectus. Donec sapien ex, dapibus at sodales sit amet, efficitur non augue. Nullam lobortis ornare hendrerit. Phasellus viverra, augue vitae condimentum suscipit, lectus neque dapibus est, id vestibulum magna nisi ac ipsum. Suspendisse ultricies faucibus elit sed bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt sollicitudin mattis. Ut congue sapien a blandit consectetur. Nullam nec arcu porta, tincidunt felis non, fermentum ligula.<br>";
+            }
+            function zdj3()
+            {
+                document.getElementById("opis").innerHTML="Wybrałeś samochód 3:<br> Suspendisse quis purus sit amet sapien porta tristique. Fusce at rutrum est, a facilisis risus. Maecenas ut arcu congue, efficitur lorem et, eleifend lectus. Donec sapien ex, dapibus at sodales sit amet, efficitur non augue. Nullam lobortis ornare hendrerit. Phasellus viverra, augue vitae condimentum suscipit, lectus neque dapibus est, id vestibulum magna nisi ac ipsum. Suspendisse ultricies faucibus elit sed bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt sollicitudin mattis. Ut congue sapien a blandit consectetur. Nullam nec arcu porta, tincidunt felis non, fermentum ligula.<br>";
+            }
+            function zdj4()
+            {
+                document.getElementById("opis").innerHTML="Wybrałeś samochód 4:<br> Suspendisse quis purus sit amet sapien porta tristique. Fusce at rutrum est, a facilisis risus. Maecenas ut arcu congue, efficitur lorem et, eleifend lectus. Donec sapien ex, dapibus at sodales sit amet, efficitur non augue. Nullam lobortis ornare hendrerit. Phasellus viverra, augue vitae condimentum suscipit, lectus neque dapibus est, id vestibulum magna nisi ac ipsum. Suspendisse ultricies faucibus elit sed bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt sollicitudin mattis. Ut congue sapien a blandit consectetur. Nullam nec arcu porta, tincidunt felis non, fermentum ligula.<br>";
+            }
+            function subaruzdj()
+            {
+                document.getElementById("opis").innerHTML="Wybrałeś nasz promocyjny produkt:<br> Suspendisse quis purus sit amet sapien porta tristique. Fusce at rutrum est, a facilisis risus. Maecenas ut arcu congue, efficitur lorem et, eleifend lectus. Donec sapien ex, dapibus at sodales sit amet, efficitur non augue. Nullam lobortis ornare hendrerit. Phasellus viverra, augue vitae condimentum suscipit, lectus neque dapibus est, id vestibulum magna nisi ac ipsum. Suspendisse ultricies faucibus elit sed bibendum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt sollicitudin mattis. Ut congue sapien a blandit consectetur. Nullam nec arcu porta, tincidunt felis non, fermentum ligula.<br>";
+            }
+        </script>
+        <script>
+            function zmiana1()
+            {
+                document.getElementById("zdj1").src="zdj1-czerw.jpg";
+            }
+            function zmiana2()
+            {
+                document.getElementById("zdj1").src="zdj1.jpg"
+            }
+            function zmiana3()
+            {
+                document.getElementById("zdj2").src="zdj2-czerw.jpg";
+            }
+            function zmiana4()
+            {
+                document.getElementById("zdj2").src="zdj2.jpg"
+            }
+            function zmiana5()
+            {
+                document.getElementById("zdj3").src="zdj3-czerw.jpg";
+            }
+            function zmiana6()
+            {
+                document.getElementById("zdj3").src="zdj3.jpg"
+            }
+            function zmiana7()
+            {
+                document.getElementById("zdj4").src="zdj4-czerw.jpg";
+            }
+            function zmiana8()
+            {
+                document.getElementById("zdj4").src="zdj4.jpg"
+            }
+        </script>
+        <script>
+            function wyslij()
+            {
+                var imie=document.getElementById("imie").value;
+                var nazwisko=document.getElementById("nazwisko").value;
+                var lat=Number(document.getElementById("lat").value);
+                var wiek=2023-lat;
+                
+                document.getElementById("wynikform").innerHTML="Witamy na naszej stronie <br> Twoje dane to: <br>Imię: "+imie+"<br>Nazwisko: "+nazwisko+"<br>Masz: "+wiek+"lat";
+            }
+        </script>
+    </body>
+</html>
